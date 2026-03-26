@@ -1,0 +1,19 @@
+* C:\Users\Shanthipriya\Desktop\madeeasy\FOSSEE\eSim\library\SubcircuitLibrary\CSA\CSA.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 12/01/24 01:49:41
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X2  Net-_X2-Pad1_ Net-_X2-Pad2_ Net-_U1-Pad6_ Net-_U1-Pad5_ half_adder		
+X4  Net-_X3-Pad5_ Net-_X4-Pad2_ Net-_X4-Pad3_ Net-_U1-Pad3_ Net-_X2-Pad1_ full_adder		
+X3  Net-_X1-Pad4_ Net-_X3-Pad2_ Net-_X3-Pad3_ Net-_U1-Pad1_ Net-_X3-Pad5_ full_adder		
+X1  Net-_X1-Pad1_ Net-_X1-Pad2_ Net-_U1-Pad2_ Net-_X1-Pad4_ half_adder		
+X5  Net-_U1-Pad11_ Net-_U1-Pad18_ Net-_U1-Pad16_ Net-_X4-Pad3_ Net-_X2-Pad2_ full_adder		
+X6  Net-_U1-Pad14_ Net-_U1-Pad13_ Net-_U1-Pad12_ Net-_X3-Pad3_ Net-_X4-Pad2_ full_adder		
+X7  Net-_U1-Pad7_ Net-_U1-Pad15_ Net-_U1-Pad17_ Net-_X1-Pad2_ Net-_X3-Pad2_ full_adder		
+X8  Net-_U1-Pad10_ Net-_U1-Pad9_ Net-_U1-Pad8_ Net-_U1-Pad4_ Net-_X1-Pad1_ full_adder		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ Net-_U1-Pad18_ PORT		
+
+.end

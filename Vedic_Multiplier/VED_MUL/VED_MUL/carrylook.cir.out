@@ -1,0 +1,52 @@
+* c:\users\shanthipriya\desktop\madeeasy\fossee\esim\library\subcircuitlibrary\carrylook\carrylook.cir
+
+* u2  net-_u1-pad2_ net-_u1-pad1_ net-_u10-pad1_ d_and
+* u6  net-_u11-pad3_ net-_u4-pad3_ net-_u10-pad2_ d_and
+* u4  net-_u1-pad1_ net-_u1-pad2_ net-_u4-pad3_ d_xor
+* u7  net-_u11-pad3_ net-_u4-pad3_ net-_u1-pad7_ d_xor
+* u10  net-_u10-pad1_ net-_u10-pad2_ net-_u1-pad8_ d_or
+* u3  net-_u1-pad4_ net-_u1-pad3_ net-_u11-pad2_ d_and
+* u8  net-_u1-pad5_ net-_u5-pad3_ net-_u11-pad1_ d_and
+* u5  net-_u1-pad4_ net-_u1-pad3_ net-_u5-pad3_ d_xor
+* u9  net-_u1-pad5_ net-_u5-pad3_ net-_u1-pad6_ d_xor
+* u11  net-_u11-pad1_ net-_u11-pad2_ net-_u11-pad3_ d_or
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ port
+a1 [net-_u1-pad2_ net-_u1-pad1_ ] net-_u10-pad1_ u2
+a2 [net-_u11-pad3_ net-_u4-pad3_ ] net-_u10-pad2_ u6
+a3 [net-_u1-pad1_ net-_u1-pad2_ ] net-_u4-pad3_ u4
+a4 [net-_u11-pad3_ net-_u4-pad3_ ] net-_u1-pad7_ u7
+a5 [net-_u10-pad1_ net-_u10-pad2_ ] net-_u1-pad8_ u10
+a6 [net-_u1-pad4_ net-_u1-pad3_ ] net-_u11-pad2_ u3
+a7 [net-_u1-pad5_ net-_u5-pad3_ ] net-_u11-pad1_ u8
+a8 [net-_u1-pad4_ net-_u1-pad3_ ] net-_u5-pad3_ u5
+a9 [net-_u1-pad5_ net-_u5-pad3_ ] net-_u1-pad6_ u9
+a10 [net-_u11-pad1_ net-_u11-pad2_ ] net-_u11-pad3_ u11
+* Schematic Name:                             d_and, NgSpice Name: d_and
+.model u2 d_and(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_and, NgSpice Name: d_and
+.model u6 d_and(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_xor, NgSpice Name: d_xor
+.model u4 d_xor(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_xor, NgSpice Name: d_xor
+.model u7 d_xor(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_or, NgSpice Name: d_or
+.model u10 d_or(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_and, NgSpice Name: d_and
+.model u3 d_and(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_and, NgSpice Name: d_and
+.model u8 d_and(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_xor, NgSpice Name: d_xor
+.model u5 d_xor(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_xor, NgSpice Name: d_xor
+.model u9 d_xor(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             d_or, NgSpice Name: d_or
+.model u11 d_or(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

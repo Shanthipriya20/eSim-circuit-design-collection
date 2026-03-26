@@ -1,0 +1,58 @@
+* C:\Users\Shanthipriya\eSim-Workspace\VED_MUL\VED_MUL.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 12/01/24 09:29:25
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+x2  Net-_U16-Pad7_ Net-_U16-Pad8_ Net-_U8-Pad7_ Net-_U8-Pad8_ Net-_x2-Pad5_ Net-_x2-Pad6_ Net-_x2-Pad7_ Net-_x1-Pad2_ mux		
+x5  Net-_U16-Pad5_ Net-_U16-Pad6_ Net-_U8-Pad7_ Net-_U8-Pad8_ Net-_x5-Pad5_ Net-_x5-Pad6_ Net-_x5-Pad7_ Net-_x5-Pad8_ mux		
+x7  Net-_U16-Pad7_ Net-_U16-Pad8_ Net-_U8-Pad5_ Net-_U8-Pad6_ Net-_x6-Pad5_ Net-_x6-Pad6_ Net-_x6-Pad7_ Net-_x6-Pad8_ mux		
+x8  Net-_U16-Pad5_ Net-_U16-Pad6_ Net-_U8-Pad5_ Net-_U8-Pad6_ Net-_U15-Pad1_ Net-_U15-Pad2_ Net-_x6-Pad1_ Net-_x6-Pad2_ mux		
+x6  Net-_x6-Pad1_ Net-_x6-Pad2_ Net-_U13-Pad2_ Net-_U13-Pad2_ Net-_x6-Pad5_ Net-_x6-Pad6_ Net-_x6-Pad7_ Net-_x6-Pad8_ Net-_x5-Pad5_ Net-_x5-Pad6_ Net-_x5-Pad7_ Net-_x5-Pad8_ Net-_U12-Pad1_ Net-_x3-Pad1_ Net-_x3-Pad2_ Net-_x3-Pad3_ Net-_x3-Pad5_ Net-_x3-Pad6_ CSA		
+U2  /b3 plot_v1		
+U3  /b2 plot_v1		
+U5  /b1 plot_v1		
+U7  /b0 plot_v1		
+U6  Net-_U6-Pad1_ Net-_U6-Pad2_ Net-_U6-Pad3_ Net-_R3-Pad1_ /m7 /m6 dac_bridge_3		
+U10  Net-_U10-Pad1_ Net-_U10-Pad2_ /m4 /m5 dac_bridge_2		
+U12  Net-_U12-Pad1_ Net-_U12-Pad2_ /m2 /m3 dac_bridge_2		
+U13  GND Net-_U13-Pad2_ adc_bridge_1		
+U15  Net-_U15-Pad1_ Net-_U15-Pad2_ /m0 /m1 dac_bridge_2		
+R2  /m7 GND 1k		
+R3  Net-_R3-Pad1_ GND 1k		
+R1  /m6 ? 1k		
+U1  /m6 plot_v1		
+U4  /m7 plot_v1		
+x3  Net-_x3-Pad1_ Net-_x3-Pad2_ Net-_x3-Pad3_ Net-_U13-Pad2_ Net-_x3-Pad5_ Net-_x3-Pad6_ Net-_U13-Pad2_ Net-_U13-Pad2_ Net-_U13-Pad2_ Net-_x2-Pad5_ Net-_x2-Pad6_ Net-_x2-Pad7_ Net-_U12-Pad2_ Net-_x3-Pad14_ Net-_x3-Pad15_ Net-_x1-Pad1_ Net-_x3-Pad17_ Net-_x3-Pad18_ CSA		
+R4  /m4 GND 1k		
+R5  /m5 GND 1k		
+U9  /m4 plot_v1		
+U11  /m5 plot_v1		
+R6  GND /m3 1k		
+R7  GND /m2 1k		
+U14  /m2 plot_v1		
+U19  /m3 plot_v1		
+R8  GND /m1 1k		
+R9  GND /m0 1k		
+U18  /m0 plot_v1		
+U17  /m1 plot_v1		
+U20  /a0 plot_v1		
+U21  /a1 plot_v1		
+U22  /a2 plot_v1		
+U23  /a3 plot_v1		
+x1  Net-_x1-Pad1_ Net-_x1-Pad2_ Net-_U13-Pad2_ Net-_U13-Pad2_ Net-_x1-Pad5_ Net-_U6-Pad1_ Net-_U6-Pad2_ Net-_U6-Pad3_ carrylook		
+x4  Net-_x3-Pad14_ Net-_x3-Pad15_ Net-_x3-Pad17_ Net-_x3-Pad18_ Net-_U13-Pad2_ Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_x1-Pad5_ carrylook		
+U8  /b0 /b1 /b2 /b3 Net-_U8-Pad5_ Net-_U8-Pad6_ Net-_U8-Pad7_ Net-_U8-Pad8_ adc_bridge_4		
+v1  /b0 GND pulse		
+v2  /b1 GND pulse		
+v3  /b2 GND pulse		
+v4  /b3 GND pulse		
+v5  /a0 GND pulse		
+v6  /a1 GND pulse		
+v7  /a2 GND pulse		
+v8  /a3 GND pulse		
+U16  /a0 /a1 /a2 /a3 Net-_U16-Pad5_ Net-_U16-Pad6_ Net-_U16-Pad7_ Net-_U16-Pad8_ adc_bridge_4		
+
+.end

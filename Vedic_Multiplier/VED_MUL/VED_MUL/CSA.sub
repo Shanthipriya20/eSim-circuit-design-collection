@@ -1,0 +1,16 @@
+* Subcircuit CSA
+.subckt CSA net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ 
+* c:\users\shanthipriya\desktop\madeeasy\fossee\esim\library\subcircuitlibrary\csa\csa.cir
+.include full_adder.sub
+.include half_adder.sub
+x2 net-_x2-pad1_ net-_x2-pad2_ net-_u1-pad6_ net-_u1-pad5_ half_adder
+x4 net-_x3-pad5_ net-_x4-pad2_ net-_x4-pad3_ net-_u1-pad3_ net-_x2-pad1_ full_adder
+x3 net-_x1-pad4_ net-_x3-pad2_ net-_x3-pad3_ net-_u1-pad1_ net-_x3-pad5_ full_adder
+x1 net-_x1-pad1_ net-_x1-pad2_ net-_u1-pad2_ net-_x1-pad4_ half_adder
+x5 net-_u1-pad11_ net-_u1-pad18_ net-_u1-pad16_ net-_x4-pad3_ net-_x2-pad2_ full_adder
+x6 net-_u1-pad14_ net-_u1-pad13_ net-_u1-pad12_ net-_x3-pad3_ net-_x4-pad2_ full_adder
+x7 net-_u1-pad7_ net-_u1-pad15_ net-_u1-pad17_ net-_x1-pad2_ net-_x3-pad2_ full_adder
+x8 net-_u1-pad10_ net-_u1-pad9_ net-_u1-pad8_ net-_u1-pad4_ net-_x1-pad1_ full_adder
+* Control Statements
+
+.ends CSA

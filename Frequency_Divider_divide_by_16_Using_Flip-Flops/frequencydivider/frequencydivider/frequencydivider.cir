@@ -1,0 +1,22 @@
+* C:\Users\Shanthipriya\eSim-Workspace\frequencydivider\frequencydivider.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/03/24 18:38:01
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U4  Net-_U4-Pad1_ Net-_U1-Pad2_ ? ? Net-_U3-Pad1_ Net-_U4-Pad1_ d_dff		
+U7  Net-_U7-Pad1_ Net-_U3-Pad1_ ? ? Net-_U10-Pad2_ Net-_U7-Pad1_ d_dff		
+U10  Net-_U10-Pad1_ Net-_U10-Pad2_ ? ? Net-_U10-Pad5_ Net-_U10-Pad1_ d_dff		
+U11  Net-_U11-Pad1_ Net-_U10-Pad5_ ? ? Net-_U11-Pad5_ Net-_U11-Pad1_ d_dff		
+U1  /clk Net-_U1-Pad2_ adc_bridge_1		
+v1  /clk GND pulse		
+U3  Net-_U3-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad5_ Net-_U11-Pad5_ /f2 /f4 /f8 /f16 dac_bridge_4		
+U2  /clk plot_v1		
+U9  /f2 plot_v1		
+U8  /f4 plot_v1		
+U6  /f8 plot_v1		
+U5  /f16 plot_v1		
+
+.end
